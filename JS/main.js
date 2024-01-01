@@ -3,17 +3,14 @@
 const toDoInput = document.querySelector('.todo-input');
 const toDoBtn = document.querySelector('.todo-btn');
 const toDoList = document.querySelector('.todo-list');
-const standardTheme = document.querySelector('.standard-theme');
 const lightTheme = document.querySelector('.light-theme');
 const darkerTheme = document.querySelector('.darker-theme');
-
 
 // Event Listeners
 
 toDoBtn.addEventListener('click', addToDo);
 toDoList.addEventListener('click', deletecheck);
 document.addEventListener("DOMContentLoaded", getTodos);
-standardTheme.addEventListener('click', () => changeTheme('standard'));
 lightTheme.addEventListener('click', () => changeTheme('light'));
 darkerTheme.addEventListener('click', () => changeTheme('darker'));
 
